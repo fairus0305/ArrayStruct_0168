@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 struct Orang
 {
     string nama;
@@ -17,4 +18,9 @@ int main(){
     cout << "Umur = ";
     cin >> mhs.umur;
     cout << endl;
+    //tampilkan
+    cout << "Nama : " << mhs.nama << endl;
+    cout << "Desa : " << mhs.alamat << endl;
+    cout << "Umur : " << mhs.umur << endl;
 }
+
