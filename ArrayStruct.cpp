@@ -12,7 +12,7 @@ int main(){
     //ganti index ke-1
     aku[1] = 200;
     cout << endl;
-
+    cout << "Data pada index ke 1 = " << aku[1] << endl;
 }
 
 
