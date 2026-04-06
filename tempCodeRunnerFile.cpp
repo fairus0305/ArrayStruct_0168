@@ -1,1 +1,0 @@
-enampilkan dengan menggunakan perulangan for

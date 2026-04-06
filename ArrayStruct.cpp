@@ -1,51 +1,44 @@
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
 
+struct detailAlamat
+{
+    string desa;
+    string kota;
+};
 
-int main(){
-    // deklarasi dengan inisialisasi
-    int aku[5] = {10, 20, 30, 40, 50};
-    // deklarasi array tanpa inisialisasi
-    int kamu[5];
-    //tampilkan data
-    cout << "Data pada index ke 1 = " << aku[1] << endl;
-    //ganti index ke-1
-    aku[1] = 200;
-    cout << endl;
-    cout << "Data pada index ke 1 = " << aku[1] << endl;
-    //mengisi satu per satu
-    cout << "Data index 0 = ";
-    cin >> kamu[0];
-    cout << "Data index 1 = ";
-    cin >> kamu[1];
-    cout << "Data index 2 = ";
-    cin >> kamu[2];
-    cout << "Data index 3 = ";
-    cin >> kamu[3];
-    cout << "Data index 4 = ";
-    cin >> kamu[4];
-    cout << endl;
-    //menampilkan 1 per 1
-    cout << "Data pertama = " << kamu[0] << endl;
-    cout << "Data kedua = " << kamu[1] << endl;
-    cout << "Data ketiga = " << kamu[2] << endl;
-    cout << "Data keempa = " << kamu[3] << endl;
-    cout << "Data kelima = " << kamu[4] << endl;
-    cout << endl;
+struct Orang
+{
+    string nama;
+    detailAlamat alamat;
+    int umur;
+};
 
-    //mengisi dengan perulangan for
-    for (int i = 0; i <= 4; i++)
+int main()
+{
+    Orang mhs[3];
+
+    for (int i = 0; i <=2; i++)
     {
-        cout << "Data index ke-" << i << " = ";
-        cin >> kamu[i];
-    }
-
-    //menampilkan dengan menggunakan perulangan for
-    for (int i = 0; i <= 4; i++)
-    {
-        cout << "data ke-" << i + 1 << "=" << kamu[1] << endl;
+        cout << "Nama = ";
+        getline(cin, mhs[i].nama);
+        cout << "Desa = ";
+        getline(cin, mhs[i].alamat.desa);
+        cout << "Kota = ";
+        getline(cin, mhs[i].alamat.kota);
+        cout << "Umur = ";
+        cin >> mhs[i].umur;
+        cout << endl;
+        cin.ignore();
     }
     
+    for (int i = 0; i <=2; i++)
+    {
+        // tampilkan
+        cout << "Nama : " << mhs[i].nama << endl;
+        cout << "Desa : " << mhs[i].alamat.desa << endl;
+        cout << "Kota : " << mhs[i].alamat.kota << endl;
+        cout << "Umur : " << mhs[i].umur << endl;
+    }
 }
-
-
