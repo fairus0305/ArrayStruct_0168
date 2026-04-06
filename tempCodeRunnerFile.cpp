@@ -1,0 +1,1 @@
+    cout << "Data pada index ke 1 = " << aku[1] << endl;
