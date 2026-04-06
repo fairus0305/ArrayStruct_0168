@@ -20,7 +20,8 @@ int main(){
     cout << endl;
     //tampilkan
     cout << "Nama : " << mhs.nama << endl;
-    cout << "Desa : " << mhs.alamat << endl;
+    cout << "Alamat : " << mhs.alamat << endl;
     cout << "Umur : " << mhs.umur << endl;
 }
 
+ 
